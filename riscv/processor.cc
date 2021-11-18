@@ -158,8 +158,6 @@ void processor_t::parse_varch_string(const char* s)
   /* Vector spec requirements. */
   if (vlen < elen)
     bad_varch_string(s, "vlen must be >= elen");
-  if (vlen != slen)
-    bad_varch_string(s, "vlen must be == slen for current limitation");
 
   /* spike requirements. */
   if (vlen > 4096)
